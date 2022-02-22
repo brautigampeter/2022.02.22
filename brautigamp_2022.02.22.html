@@ -67,11 +67,36 @@
             <div class="col-4 c">
                 <p> EGÉRGOMB LENYOMVA – FELENGEDVE <br>KÉPVÁLTÁS</p>
 
+                <img onmousedown="on(this)" onmouseup="out(this)" border="0" src="kepek/pic_bulboff.gif" alt="" >
+
+                <script>
+                    function on(x) {
+                        x.src="kepek/pic_bulbon.gif";
+                    }
+                
+                    function out(x) {
+                        x.src="kepek/pic_bulboff.gif";
+                    }
+                </script>
  
             </div>
             <div class="col-4 c">
                 <p>EGÉRKURZOR LENYOMVA – FELENGEDVE <br> NAGYÍTÁS</p>
                 
+                <img onmousedown="nagy1(this)" onmouseup="normal1(this)" border="0" src="kepek/pic_bulboff.gif" alt="" width="100" height="180">
+            
+                <script>
+                    function nagy1(x) {
+                        x.style.height = "360px";
+                        x.style.width = "200px";
+                    }
+            
+                    function normal1(x) {
+                        x.style.height = "180px";
+                        x.style.width = "100px";
+                    }
+                </script>
+
             </div>
             <div class="col-2"></div>
         </div>
@@ -83,6 +108,15 @@
             <div class="col-4 c">
                 <p>EGÉRKURZOR LENYOMVA – FELENGEDVE <BR>MEGJELENÍTÉS</BR>   </p>
  
+                <img onmousedown="document.getElementById('demo2').style.display='block'"" onmouseup="document.getElementById('demo2').style.display='none'" border="0" src="kepek/pic_bulboff.gif" alt="" width="100" height="180">
+            </div>
+            <div class="col-4 c">
+                <P><BR></BR></P>
+                <img id="demo2" src="kepek/pic_bulbon.gif" alt="" >
+            </div>
+            <div class="col-2"></div>
+        </div>
+
             <div class="col-2"></div>
         </div>
     </div>
